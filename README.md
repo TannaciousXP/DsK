@@ -10,20 +10,22 @@ Open up the index.html in the browser.
 
 ### Notes
 
-Funcs:
+**Funcs:**
 
 Functions that relates to the DOM are in scripts.js. Functions that don't relate to the DOM are in helperFuncs.js
 
-Input:
+**Input:**
 
 The input field for ids is only accepts [0-9] and comma
 
 It will only type out numbers, after that it will preventDefault until you use a comma.
 
-Fetch Request:
+**Fetch Request:**
+
 Currently, for the ids provided they all have 0 stock so I included some dummy data for the sorting button.
 
 Please refer to scripts.js ln 232 - 278 and uncomment SIMILATE for the sort btns and comment out the FETECH
 
-Libraries and Frameworks:
+**Libraries and Frameworks:**
+
 None, I decided to use vanilla JS, HTML, and CSS because I believe this will best display my capabilities.
