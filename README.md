@@ -2,6 +2,8 @@
 
 Task to use an API endpoint for the following product IDS 143249,142593,141975,150605. Can enter one id or multiple separated by a comma.
 
+Pictures and logo is from the DsK website.
+
 ## To Run
 
 Open up the index.html in the browser.
