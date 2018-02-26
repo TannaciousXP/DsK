@@ -18,7 +18,7 @@ Functions that relates to the DOM are in scripts.js. Functions that don't relate
 
 The input field for ids is only accepts [0-9] and comma
 
-It will only type out numbers, after that it will preventDefault until you use a comma.
+It will only type out **_6 numbers or (numsPressed % 6 === 0)_**, after that it will preventDefault until you use a comma.
 
 **Fetch Request:**
 
