@@ -2,7 +2,7 @@
 
 Task to use an API endpoint for the following product IDS 143249,142593,141975,150605. Can enter one id or multiple separated by a comma.
 
-Pictures and logo is from the DsK website.
+Pictures and logo are from DsK website.
 
 ## To Run
 
@@ -11,10 +11,11 @@ Open up the index.html in the browser.
 ### Notes
 
 Funcs:
-Functions that relates to the DOM are in scripts.js
-Functions that don't relate to the DOM are in helperFuncs.js
+
+Functions that relates to the DOM are in scripts.js. Functions that don't relate to the DOM are in helperFuncs.js
 
 Input:
+
 The input field for ids is only accepts [0-9] and comma
 
 It will only type out numbers, after that it will preventDefault until you use a comma.
