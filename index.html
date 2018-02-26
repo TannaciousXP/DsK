@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dolls Kill TC</title>
+</head>
+<body>
+  <div class="banner">
+    <img class="logo" src="https://cdn-cf.dollskill.com/skin/frontend/dollskill/dollskill/images/dollskill_logo.png" alt="Dolls Kill">
+  </div>
+  <div class="search">
+    <form class="inquire">
+      <input type="text" name="ids" placeholder="Enter id or ids separated by ," required/>
+      <input type="submit" name="search" value="Search Sizes"/>
+    </form>
+    <div class="stock out">
+      <article class="content out">
+        <h2 class="content header">Out of Stock</h2>
+        <hr class="breaker">
+        <div class="info-list"></div>
+      </article>
+    </div>
+    <div class="stock in">
+      <article class="content in">
+        <h2 class="content header">In Stock</h2>
+        <hr class="breaker">
+        <div class="info-list"></div>
+      </article>      
+    </div>
+  </div>
+  <script src="helperFuncs.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
+

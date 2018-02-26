@@ -1,0 +1,292 @@
+:root {
+  --yellow: #ffc600;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Futura, Impact, Helvetica, 'Arial Narrow Bold', sans-serif;
+  background-color: var(--yellow);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-width: 380px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: url("https://cdn-cf.dollskill.com/skin/frontend/dollskill/dollskill/images/aboutus_desktop/HALLOWEEN_LANDING_ROLLOVERS_V2_02.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45vh;
+  min-width: 380px;
+  min-height: 450px;
+}
+
+.logo {
+  margin-top: 10%;
+  background-color: var(--yellow);
+  background-size: auto;
+  width: 40%;
+  box-shadow: 5px 10px 10px #3c3c3c;
+  padding: 10px;
+  transform: rotate(-5deg);
+  min-width: 360px;
+  max-width: 800px;;
+}
+
+/* Container for forms */
+.search {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  flex-wrap: wrap;
+}
+
+/* General CSS for in and out div */
+.stock {
+  width: 50%;
+  height: 55vh;
+  box-shadow: inset 0 0 3rem var(--yellow);
+  flex-wrap: wrap;
+  min-width: 360px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Wrapped stock */
+.stock.wrapped {
+  width: 100%;
+  min-width: 360px;
+}
+
+/* Bottom left div out of tag background */
+.stock.out {
+  background: url("https://d28m5bx785ox17.cloudfront.net/v1/img/tfUyR08hj1HVytBgmTlfd9F33So99Lq2ofcoKW8l9c0=/sc/600x600?spatialTags=0.501718:0.543890") bottom left;
+  background-size: cover;
+  
+}
+
+/* Bottom right div in of tag background */
+.stock.in {
+  background: url("https://media.dollskill.com/media/EF7Z3A1zFWjPxReO61HGgmQPCzQJ9TGj-31.jpg") center;
+  background-size: cover;
+  
+}
+/* Form tag */
+.inquire {
+  position: absolute;
+  top: -20px;
+  background-color: rgba(0, 0, 0, .75);
+  box-shadow: 0 0 .1em .68em rgba(0, 0, 0, .75);
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1em;
+  min-width: 350px;
+  
+}
+
+.inquire > input:focus {
+  outline: none;  
+}
+
+/* Form elements CSS */
+.inquire input {
+  height: 40px;
+  font-size: 1em;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.inquire input[name=ids] {
+  flex-grow: 3;
+  padding: .55rem;
+  font-weight: 600;
+}
+
+.inquire input[name=add] {
+  background-color: var(--yellow);
+  color: white;
+  flex-grow: 1;
+  font-size: 1.5em;
+  font-weight: 500;
+  max-width: 30px;
+}
+
+.inquire input[name=search] {
+  background-color: var(--yellow);
+  color: white;
+  font-weight: 600;
+  flex-grow: 1;
+  margin: 0;
+  max-width: 115px;
+}
+
+.inquire input[name=search]:hover,
+.inquire input[name=add]:hover {
+  color: black;
+}
+
+/* Content inside stock */
+.content {
+  /* opacity: 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, .50);
+  padding: 18px;
+  position: relative;
+  text-align: justify;
+  box-shadow: .65em 1em 1em 0 rgba(0, 0, 0, .35),
+              -.65em 1em 1em 0 rgba(0, 0, 0, .35);
+  transition: transform 0.5s;
+}
+
+
+
+.content.out {
+  transform: translateX(-150%);
+}
+
+.content.in {
+  transform: translateX(150%);
+}
+
+.content.out.open-active {
+  transform: translateX(0);
+}
+.content.in.open-active {
+  transform: translateX(0);
+}
+
+/* Line across */
+.breaker {
+  margin: 0;
+  border: 5px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffc800e6;
+}
+
+.header {
+  background-color: #ffc800e6;
+  /* color: white; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+  width: 90%;
+  height: 10%;
+  justify-content: center;
+  box-shadow: .35em .45em .8em 0 rgba(0, 0, 0, .35),
+              -.35em .45em .8em 0 rgba(0, 0, 0, .35);
+}
+
+/* Info-list */
+.info-list {
+  height: 100%;
+  width: 100%;
+  margin-top: 18px;
+  overflow: auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 300;
+  font-size: 20px;  
+}
+
+.info-list .sort {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--yellow);
+  margin-bottom: 5px;
+  padding: 0 10px;
+  align-items: center;
+  align-content: center;
+  height: 35px;
+}
+
+.info-list .id-info {
+  padding: 0 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.sort .btns {
+  height: 100%;
+  /* background: white; */
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-list .sort-btn {
+  background: var(--yellow);
+  width: 30px;
+  border: 0px;
+  padding: 0;
+  height: 20px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.info-list .id {
+  margin: 0;
+}
+
+.info-list .breaker {
+  margin-bottom: 5px;
+}
+
+.info-list li {
+  font-weight: 100;
+  font-size: 17px;
+  list-style: none;
+  padding: 0 10px;
+  text-align: justify
+}
+
+.info-list .name {
+  font-size: 20px;
+  color: black;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  background:  #ffc800d4;
+  max-width: 60%;
+  min-width: 220px;
+  text-align: left;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
