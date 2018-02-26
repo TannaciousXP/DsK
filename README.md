@@ -29,3 +29,19 @@ Please refer to scripts.js ln 232 - 278 and uncomment SIMILATE for the sort btns
 **Libraries and Frameworks:**
 
 None, I decided to use vanilla JS, HTML, and CSS because I believe this will best display my capabilities.
+
+### Tasks
+
+- [x] After submitting the form the user should be able to see all the existent sizes for that product(s) classified in 2 groups: in stock (qty > 0) and out of stock (qty = 0).
+
+- [x]  Also make sure to list the available quantity for each size in front of the size.
+
+- [x] The form should also work with a collection of products, i.e 143249,142593,141975,150605 instead of one single id and should produce the same result for each product.
+
+- [x] The sizes must be shown sorted by quantity. Also add an option so the user can sort the sizes on ascending and descending order based on the quantity.
+
+- [x] The user should be able to submit the form by hitting a submit button and by hitting the enter key on the input field.
+
+- [x] Make sure that the form validates the type of data entered. Your function should only accept integer numbers for product id’s.
+
+- [x] Also it’s important that the web form and listed results are easy for the user to see on any type of device including smartphones.
